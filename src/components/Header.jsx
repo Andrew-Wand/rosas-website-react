@@ -25,11 +25,11 @@ function Header() {
               <i className="logo-icon">Rosa Cafe</i>
             </a>
             {/* HAMBURGER MOBILE ONLY */}
-            <a href="" className="btn-menu">
+            {/* <a href="" className="btn-menu">
               <span></span>
               <span></span>
               <span></span>
-            </a>
+            </a> */}
             {/* HAMBURGER  */}
 
 
@@ -40,7 +40,7 @@ function Header() {
                 <span>Locations</span>
               </a>
               {/* DROPDOWN MENU */}
-              <div className="location-dropdown">
+              {/* <div className="location-dropdown">
                 <div className="search-location">
                   <label htmlFor="">Search</label>
                   <input type="search" className="search-field" placeholder="city & state or zip" />
@@ -50,13 +50,14 @@ function Header() {
                   <i className="arrow-icon"></i>
                   <span>Use current location</span>
                   </a>
-              </div>
+              </div> */}
 
               {/* DROPDOWN MENU END */}
             </div>
 
 
             <nav className="menu-nav">
+              <ul>
               <li>
                 <a href="">menu</a>
               </li>
@@ -75,6 +76,8 @@ function Header() {
               <li>
               <a href="">nutrition</a>
               </li>
+              </ul>
+             
             </nav>
           </div>
         </div>
