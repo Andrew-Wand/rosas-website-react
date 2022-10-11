@@ -1,6 +1,31 @@
 import React from 'react'
 
+
+
+
 function Header() {
+
+
+  const openMobileMenu = (e) => {
+    e.preventDefault();
+
+    const menuNav = document.getElementById('menu-nav');
+    menuNav.classList.toggle('menu-is-active');
+
+    const menuBtn = document.getElementById('btn-menu');
+    menuBtn.classList.toggle('btn-is-active');
+
+
+    const headerInner = document.getElementById('header-inner');
+    headerInner.classList.toggle('header-active');
+
+
+  }
+
+
+
+
+
   return (
     <div className='header-container'>
       <header className="header">
@@ -18,18 +43,18 @@ function Header() {
           </nav>
         </div>
 
-        <div className="header-inner">
+        <div className="header-inner" id='header-inner'>
           <div className="inner-container">
             
             <a href="" className="logo">
               <i className="logo-icon">Rosa Cafe</i>
             </a>
             {/* HAMBURGER MOBILE ONLY */}
-            {/* <a href="" className="btn-menu">
+            <a href="" className="btn-menu" id='btn-menu'  onClick={openMobileMenu}>
               <span></span>
               <span></span>
               <span></span>
-            </a> */}
+            </a>
             {/* HAMBURGER  */}
 
 
@@ -56,26 +81,34 @@ function Header() {
             </div>
 
 
-            <nav className="menu-nav">
+            <nav className="menu-nav" id='menu-nav'>
               <ul>
               <li>
                 <a href="">menu</a>
               </li>
+              
               <li>
                 <a href="">catering</a>
               </li>
+              
               <li>
               <a href="">gift cards</a>
               </li>
+              
               <li>
               <a href="">careers</a>
               </li>
+              
               <li>
               <a href="">vip</a>
               </li>
+              
               <li>
               <a href="">nutrition</a>
               </li>
+
+
+
               </ul>
              
             </nav>
