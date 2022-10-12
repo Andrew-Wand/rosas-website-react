@@ -18,8 +18,18 @@ function Header() {
 
     const headerInner = document.getElementById('header-inner');
     headerInner.classList.toggle('header-active');
+  }
 
+  const openLocationMenu = (e) => {
+    e.preventDefault();
 
+    const pinIcon = document.getElementById('pin-icon');
+
+    pinIcon.classList.toggle('pin-is-active');
+
+    const locationDropdown = document.getElementById('location-dropdown');
+
+    locationDropdown.classList.toggle('pin-is-active');
   }
 
 
@@ -60,22 +70,28 @@ function Header() {
 
             
             <div className="header-location">
-              <a href="">
+              <a href="" id='pin-icon' onClick={openLocationMenu}>
                 <i className="pin-icon"></i>
                 <span>Locations</span>
               </a>
               {/* DROPDOWN MENU */}
-              {/* <div className="location-dropdown">
+              <div className="location-dropdown" id='location-dropdown'>
                 <div className="search-location">
-                  <label htmlFor="">Search</label>
-                  <input type="search" className="search-field" placeholder="city & state or zip" />
-                  <a href="" className="search-btn">go</a>
-                </div>
-                <a href="" className="get-location">
+                  <div className="search-location-inner">
+                    <label htmlFor="">Search</label>
+                    <input type="search" className="search-field" placeholder="city & state or zip" />
+                    <a href="" className="search-btn">go</a>
+
+                  
+                 
+                  </div>
+                  <a href="" className="get-location">
                   <i className="arrow-icon"></i>
                   <span>Use current location</span>
                   </a>
-              </div> */}
+                </div>
+               
+              </div>
 
               {/* DROPDOWN MENU END */}
             </div>
@@ -83,8 +99,8 @@ function Header() {
 
             <nav className="menu-nav" id='menu-nav'>
               <ul>
-              <li>
-                <a href="">menu</a>
+              <li className='menu-arrow'>
+                <a href="" >menu</a>
               </li>
               
               <li>
@@ -108,6 +124,21 @@ function Header() {
               </li>
 
 
+              <li className="visible-mobile-menu">
+                <a href="">locations</a>
+              </li>
+              
+              <li className="visible-mobile-menu">
+              <a href="">careers</a>
+              </li>
+              
+              <li className="visible-mobile-menu">
+              <a href="">about us</a>
+              </li>
+              
+              <li className="visible-mobile-menu">
+              <a href="">contact</a>
+              </li>
 
               </ul>
              
