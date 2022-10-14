@@ -1,8 +1,6 @@
 import React from 'react'
 
 
-
-
 function Header() {
 
 
@@ -31,9 +29,6 @@ function Header() {
 
     locationDropdown.classList.toggle('pin-is-active');
   }
-
-
-
 
 
   return (
