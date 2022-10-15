@@ -69,7 +69,7 @@ function Header() {
                 <i className="pin-icon"></i>
                 <span>Locations</span>
               </a>
-              {/* DROPDOWN MENU */}
+              {/* LOCATION DROPDOWN MENU */}
               <div className="location-dropdown" id='location-dropdown'>
                 <div className="search-location">
                   <div className="search-location-inner">
@@ -88,7 +88,7 @@ function Header() {
                
               </div>
 
-              {/* DROPDOWN MENU END */}
+              {/* LOCATION DROPDOWN MENU END */}
             </div>
 
 
@@ -96,6 +96,79 @@ function Header() {
               <ul>
               <li className='menu-arrow'>
                 <a href="" >menu</a>
+
+
+                {/* MENU DROPDOWN */}
+                <div className="menu-dropdown-container">
+
+                  <a href="" className="mobile-nav-title">
+                    Main Menu
+                  </a>
+                  
+                  <ul className="list-menu">
+                    <li>
+                      <a href="">
+                        <figure>
+                          <img src="" alt="" />
+                        </figure>
+                        <span>DINNERS</span>
+                      </a>
+                    </li>
+                    <li>
+                    <a href="">
+                        <figure>
+                          <img src="" alt="" />
+                        </figure>
+                        <span>INDIVIDUAL ITEMS</span>
+                      </a>
+                    </li>
+                    <li>
+                    <a href="">
+                        <figure>
+                          <img src="" alt="" />
+                        </figure>
+                        <span>FAMILY MEALS</span>
+                      </a>
+                    </li>
+                    <li>
+                    <a href="">
+                        <figure>
+                          <img src="" alt="" />
+                        </figure>
+                        <span>KIDS</span>
+                      </a>
+                    </li>
+                    <li>
+                    <a href="">
+                        <figure>
+                          <img src="" alt="" />
+                        </figure>
+                        <span>BREAKFAST</span>
+                      </a>
+                    </li>
+                    <li>
+                    <a href="">
+                        <figure>
+                          <img src="" alt="" />
+                        </figure>
+                        <span>DESSERTS & DRINKS</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  
+                  
+                
+
+                </div>
+
+                  
+
+                  
+
+
+
+                {/*  */}
               </li>
               
               <li>

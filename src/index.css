@@ -7,9 +7,16 @@
   outline: 0;
 }
 
-html, body {
-  max-width: 100%;
+html,
+body {
+  /* max-width: 100%;
+  overflow-x: hidden; */
+}
+
+.wrapper {
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
 
@@ -262,10 +269,26 @@ html, body {
   font-size: 0;
 }
 
+/* HEADER MENU DROPDOWN */
+.menu-dropdown-container {
+  background-image: url(./imgs/textura-menu.png);
+  position: absolute;
+  background-color: #fff;
+  box-shadow: inset 1px 4px 6px 0 rgba(0, 0, 0, .31);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+}
+
+.mobile-nav-title a {
+  text-decoration: none;
+  transition: transform .3s, -webkit-transform .3s;
+}
 
 
 
 
+
+/*  */
 
 /* MOBILE FOR LOGO */
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -420,6 +443,51 @@ not all,
     top: auto;
     bottom: 1px;
   }
+
+  .menu-dropdown-container {
+    overflow-y: auto;
+    top: 0;
+    z-index: 10;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding: 12px 10px 10px;
+    pointer-events: initial;
+    transition: left .3s;
+    /* left: 100%; */
+  }
+
+  .menu-dropdown-container.expand {
+    left: 0;
+  }
+
+  .mobile-nav-title {
+    width: 100%;
+    color: #000;
+    text-align: left;
+    position: relative;
+    padding: 8px 0 8px 30px;
+    border-bottom: 2px dashed #000;
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .mobile-nav-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+    transform: rotate(-45deg) translateY(-50%);
+    transform-origin: center top;
+  }
+
 
 }
 
