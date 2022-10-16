@@ -9,7 +9,8 @@ import dessertDrinks from '../imgs/_Desserts.png';
 
 
 function Header() {
-
+  
+  
 
   const openMobileMenu = (e) => {
     e.preventDefault();
@@ -23,19 +24,69 @@ function Header() {
 
     const headerInner = document.getElementById('header-inner');
     headerInner.classList.toggle('header-active');
+
+    // Close location if hamburger pressed
+    if (menuBtn.classList.contains('btn-is-active')) {
+      const locationDropdown = document.getElementById('location-dropdown');
+
+      locationDropdown.classList.remove('pin-is-active');
+    }
+
+
+
   }
+
+
 
   const openLocationMenu = (e) => {
     e.preventDefault();
 
-    const pinIcon = document.getElementById('pin-icon');
+    // const pinIcon = document.getElementById('pin-icon');
 
-    pinIcon.classList.toggle('pin-is-active');
+    // pinIcon.classList.toggle('pin-is-active');
 
     const locationDropdown = document.getElementById('location-dropdown');
 
     locationDropdown.classList.toggle('pin-is-active');
+
+
+    // Close hamburger menu when location pressed
+    const menuNav = document.getElementById('menu-nav');
+    const menuBtn = document.getElementById('btn-menu');
+    const headerInner = document.getElementById('header-inner');
+
+
+    if (menuNav.classList.contains('menu-is-active')) {
+      menuNav.classList.remove('menu-is-active');
+
+      menuBtn.classList.remove('btn-is-active');
+
+      headerInner.classList.remove('header-active');
+    }
+
   }
+
+
+
+
+
+  const openMenuDropDown = (e) => {
+    e.preventDefault();
+
+    const menuDropdownContainer = document.getElementById('menu-dropdown-container');
+
+    menuDropdownContainer.classList.add('expand');
+
+  }
+
+  const closeMenuDropDown = (e) => {
+    e.preventDefault();
+
+    const menuDropdownContainer = document.getElementById('menu-dropdown-container');
+
+    menuDropdownContainer.classList.remove('expand');
+  }
+  
 
 
   return (
@@ -101,14 +152,15 @@ function Header() {
 
             <nav className="menu-nav" id='menu-nav'>
               <ul>
-              <li className='menu-arrow'>
-                <a href="" >menu</a>
+              
+              <li className='menu-arrow' >
+                <a href="" onClick={openMenuDropDown} >menu</a>
 
 
                 {/* MENU DROPDOWN */}
-                <div className="menu-dropdown-container">
+                <div className="menu-dropdown-container" id='menu-dropdown-container'>
 
-                  <a href="" className="mobile-nav-title">
+                  <a href="" className="mobile-nav-title" onClick={closeMenuDropDown}>
                     Main Menu
                   </a>
                   
