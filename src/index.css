@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -282,7 +284,90 @@ body {
 .mobile-nav-title a {
   text-decoration: none;
   transition: transform .3s, -webkit-transform .3s;
+
 }
+
+.menu-arrow .mobile-nav-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #000;
+  /* border-left: 3px solid #000; */
+  transform: rotate(230deg) translateY(-50%);
+  transform-origin: center top;
+}
+
+.menu-dropdown-container ul {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  list-style: none outside none;
+}
+
+.list-menu img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  border: 0;
+}
+
+.list-menu li {
+  text-align: center;
+  transition: visibility .3s,opacity .3s;
+}
+
+.menu-dropdown-container a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .3s,-webkit-transform .3s;
+}
+
+.menu-dropdown-container figure {
+  display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+flex-flow: row wrap;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+height: 115px;
+}
+
+.list-menu figure {
+  position: relative;
+z-index: 4;
+text-align: center;
+}
+
+.menu-nav .menu-dropdown-container .mobile-nav-title {
+  text-align: left;
+}
+
+.menu-dropdown-container span {
+  display: block;
+  font-size: 24px;
+line-height: 1;
+color: inherit;
+text-transform: uppercase;
+letter-spacing: .05em;
+text-align: center;
+text-shadow: 1px 2px 2px rgba(0,0,0,.5);
+font-family: 'Yomogi', sans-serif;
+font-weight: bolder;
+}
+
+
 
 
 
@@ -470,23 +555,37 @@ not all,
     padding: 8px 0 8px 30px;
     border-bottom: 2px dashed #000;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 17px;
     display: block;
     text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
   }
 
-  .mobile-nav-title::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    border-top: 3px solid #000;
-    border-left: 3px solid #000;
-    transform: rotate(-45deg) translateY(-50%);
-    transform-origin: center top;
+  .menu-dropdown-container ul {
+    padding: 0;
   }
+
+  .menu-dropdown-container li {
+    width: 50%;
+margin: 0 0 20px;
+  }
+
+  .list-menu li {
+    max-width: 50%;
+padding: 0 5px;
+  }
+
+  .menu-dropdown-container a {
+    width: 100%;
+    color: #000;
+  }
+
+  .menu-dropdown-container figure {
+    margin: 0 auto;
+  }
+
+
 
 
 }

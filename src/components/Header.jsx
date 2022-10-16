@@ -1,5 +1,12 @@
 import React from 'react'
 
+import dinner from '../imgs/_Dinners.png';
+import singleMeal from '../imgs/_individual_items.png';
+import familyMeal from '../imgs/_group_meals.png';
+import kidsMeal from '../imgs/_Kids4.png';
+import breakfast from '../imgs/_breakfast.png';
+import dessertDrinks from '../imgs/_Desserts.png';
+
 
 function Header() {
 
@@ -107,9 +114,9 @@ function Header() {
                   
                   <ul className="list-menu">
                     <li>
-                      <a href="">
+                      <a href="/">
                         <figure>
-                          <img src="" alt="" />
+                          <img src={dinner} alt="Dinners" />
                         </figure>
                         <span>DINNERS</span>
                       </a>
@@ -117,7 +124,7 @@ function Header() {
                     <li>
                     <a href="">
                         <figure>
-                          <img src="" alt="" />
+                          <img src={singleMeal} alt="" />
                         </figure>
                         <span>INDIVIDUAL ITEMS</span>
                       </a>
@@ -125,7 +132,7 @@ function Header() {
                     <li>
                     <a href="">
                         <figure>
-                          <img src="" alt="" />
+                          <img src={familyMeal} alt="" />
                         </figure>
                         <span>FAMILY MEALS</span>
                       </a>
@@ -133,7 +140,7 @@ function Header() {
                     <li>
                     <a href="">
                         <figure>
-                          <img src="" alt="" />
+                          <img src={kidsMeal} alt="" />
                         </figure>
                         <span>KIDS</span>
                       </a>
@@ -141,7 +148,7 @@ function Header() {
                     <li>
                     <a href="">
                         <figure>
-                          <img src="" alt="" />
+                          <img src={breakfast} alt="" />
                         </figure>
                         <span>BREAKFAST</span>
                       </a>
@@ -149,7 +156,7 @@ function Header() {
                     <li>
                     <a href="">
                         <figure>
-                          <img src="" alt="" />
+                          <img src={dessertDrinks} alt="" />
                         </figure>
                         <span>DESSERTS & DRINKS</span>
                       </a>
