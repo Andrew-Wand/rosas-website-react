@@ -156,8 +156,7 @@ function Header() {
               <li className='menu-arrow' >
                 <a href="" onClick={openMenuDropDown} >menu</a>
 
-
-                {/* MENU DROPDOWN */}
+                {/* MENU MOBILE DROPDOWN */}
                 <div className="menu-dropdown-container" id='menu-dropdown-container'>
 
                   <a href="" className="mobile-nav-title" onClick={closeMenuDropDown}>
