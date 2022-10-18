@@ -97,10 +97,10 @@ function Header() {
           <nav className="secondary-nav">
             <ul>
               <li>
-                <a href="">about us</a>
+                <a href="/">about us</a>
               </li>
               <li>
-                <a href="">contact</a>
+                <a href="/">contact</a>
               </li>
             </ul>
           </nav>
@@ -123,7 +123,7 @@ function Header() {
 
             
             <div className="header-location">
-              <a href="" id='pin-icon' onClick={openLocationMenu}>
+              <a href="/" id='pin-icon' onClick={openLocationMenu}>
                 <i className="pin-icon"></i>
                 <span>Locations</span>
               </a>
@@ -215,16 +215,7 @@ function Header() {
                     </li>
                   </ul>
 
-                  
-                  
-                
-
                 </div>
-
-                  
-
-                  
-
 
 
                 {/*  */}
