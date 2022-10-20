@@ -74,13 +74,13 @@ img {
 }
 
 .product-badge span {
-  font-family: "Yomogi", sans-serif;
+  font-family: "Amatic SC", sans-serif;
   line-height: 1;
   color: #000;
   font-weight: 800;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 38px;
 }
 
 .product-badge small {
@@ -131,11 +131,12 @@ img {
 .product-price {
   display: block;
   font-size: 60px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Amatic SC", sans-serif;
   line-height: 1;
   color: #000;
   letter-spacing: 0.025em;
   margin-bottom: 44px;
+  font-weight: 900;
 }
 
 .product-content a {

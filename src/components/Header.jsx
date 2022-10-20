@@ -250,7 +250,6 @@ function Header() {
           </div>
         </div>
       </header>
-      <Intro />
     </div>
   );
 }
