@@ -1,5 +1,5 @@
 import React from "react";
-
+import Intro from "./Intro";
 import dinner from "../imgs/_Dinners.png";
 import singleMeal from "../imgs/_individual_items.png";
 import familyMeal from "../imgs/_group_meals.png";
@@ -90,12 +90,12 @@ function Header() {
 
         <div className="header-inner" id="header-inner">
           <div className="inner-container">
-            <a href="" className="logo">
+            <a href="/" className="logo">
               <i className="logo-icon">Rosa Cafe</i>
             </a>
             {/* HAMBURGER MOBILE ONLY */}
             <a
-              href=""
+              href="/"
               className="btn-menu"
               id="btn-menu"
               onClick={openMobileMenu}
@@ -121,11 +121,11 @@ function Header() {
                       className="search-field"
                       placeholder="city & state or zip"
                     />
-                    <a href="" className="search-btn">
+                    <a href="/" className="search-btn">
                       go
                     </a>
                   </div>
-                  <a href="" className="get-location">
+                  <a href="/" className="get-location">
                     <i className="arrow-icon"></i>
                     <span>Use current location</span>
                   </a>
@@ -138,7 +138,7 @@ function Header() {
             <nav className="menu-nav" id="menu-nav">
               <ul>
                 <li className="menu-arrow">
-                  <a href="" onClick={openMenuDropDown}>
+                  <a href="/" onClick={openMenuDropDown}>
                     menu
                   </a>
 
@@ -148,7 +148,7 @@ function Header() {
                     id="menu-dropdown-container"
                   >
                     <a
-                      href=""
+                      href="/"
                       className="mobile-nav-title"
                       onClick={closeMenuDropDown}
                     >
@@ -165,7 +165,7 @@ function Header() {
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/">
                           <figure>
                             <img src={singleMeal} alt="" />
                           </figure>
@@ -173,7 +173,7 @@ function Header() {
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/">
                           <figure>
                             <img src={familyMeal} alt="" />
                           </figure>
@@ -181,7 +181,7 @@ function Header() {
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/">
                           <figure>
                             <img src={kidsMeal} alt="" />
                           </figure>
@@ -189,7 +189,7 @@ function Header() {
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/">
                           <figure>
                             <img src={breakfast} alt="" />
                           </figure>
@@ -197,7 +197,7 @@ function Header() {
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/">
                           <figure>
                             <img src={dessertDrinks} alt="" />
                           </figure>
@@ -211,45 +211,46 @@ function Header() {
                 </li>
 
                 <li>
-                  <a href="">catering</a>
+                  <a href="/">catering</a>
                 </li>
 
                 <li>
-                  <a href="">gift cards</a>
+                  <a href="/">gift cards</a>
                 </li>
 
                 <li>
-                  <a href="">careers</a>
+                  <a href="/">careers</a>
                 </li>
 
                 <li>
-                  <a href="">vip</a>
+                  <a href="/">vip</a>
                 </li>
 
                 <li>
-                  <a href="">nutrition</a>
+                  <a href="/">nutrition</a>
                 </li>
 
                 <li className="visible-mobile-menu">
-                  <a href="">locations</a>
+                  <a href="/">locations</a>
                 </li>
 
                 <li className="visible-mobile-menu">
-                  <a href="">careers</a>
+                  <a href="/">careers</a>
                 </li>
 
                 <li className="visible-mobile-menu">
-                  <a href="">about us</a>
+                  <a href="/">about us</a>
                 </li>
 
                 <li className="visible-mobile-menu">
-                  <a href="">contact</a>
+                  <a href="/">contact</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
+      <Intro />
     </div>
   );
 }
