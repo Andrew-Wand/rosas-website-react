@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: relative;
   min-height: 100vh;
 }
@@ -362,6 +362,10 @@
 /*  */
 
 @media (max-width: 767px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+
   .header {
     min-width: 0;
   }
