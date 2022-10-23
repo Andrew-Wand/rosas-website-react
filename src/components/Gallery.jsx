@@ -178,7 +178,7 @@ function Gallery() {
       </div>
 
       <div className="gallery-btn-container">
-        <a href="/" className="btn">
+        <a href="/" className="btn btn-large">
           view our menu
         </a>
       </div>

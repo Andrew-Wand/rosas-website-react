@@ -2,6 +2,7 @@ import React from "react";
 import "../css/main.css";
 import van from "../imgs/van.png";
 import Gallery from "./Gallery";
+import Simple from "./Simple";
 
 function Main() {
   return (
@@ -24,6 +25,7 @@ function Main() {
       </section>
 
       <Gallery />
+      <Simple />
     </div>
   );
 }
