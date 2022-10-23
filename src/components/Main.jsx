@@ -3,6 +3,7 @@ import "../css/main.css";
 import van from "../imgs/van.png";
 import Gallery from "./Gallery";
 import Simple from "./Simple";
+import Social from "./Social";
 
 function Main() {
   return (
@@ -26,6 +27,7 @@ function Main() {
 
       <Gallery />
       <Simple />
+      <Social />
     </div>
   );
 }
