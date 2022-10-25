@@ -5,6 +5,7 @@ import Gallery from "./Gallery";
 import Simple from "./Simple";
 import Social from "./Social";
 import Event from "./Event";
+import Preview from "./Preview";
 
 function Main() {
   return (
@@ -30,6 +31,7 @@ function Main() {
       <Simple />
       <Social />
       <Event />
+      <Preview />
     </div>
   );
 }

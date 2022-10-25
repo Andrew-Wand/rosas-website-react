@@ -9,7 +9,7 @@ function Social() {
           <div className="socials">
             <ul>
               <li>
-                <a href="">
+                <a href="/">
                   <span className="socials-icon">
                     <i className="facebook-icon"></i>
                   </span>
@@ -17,7 +17,7 @@ function Social() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/">
                   <span className="socials-icon">
                     <i className="instagram-icon"></i>
                   </span>
@@ -25,7 +25,7 @@ function Social() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/">
                   <span className="socials-icon">
                     <i className="twitter-icon"></i>
                   </span>
