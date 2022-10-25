@@ -4,6 +4,7 @@ import van from "../imgs/van.png";
 import Gallery from "./Gallery";
 import Simple from "./Simple";
 import Social from "./Social";
+import Event from "./Event";
 
 function Main() {
   return (
@@ -28,6 +29,7 @@ function Main() {
       <Gallery />
       <Simple />
       <Social />
+      <Event />
     </div>
   );
 }
