@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/gallery.css";
 
 function Gallery() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 600);
+      setScroll(true);
+    });
+  }, []);
+
   return (
     <div className="gallery-container">
       <div className="gallery-content">

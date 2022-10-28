@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Intro from "./Intro";
 import dinner from "../imgs/_Dinners.png";
 import singleMeal from "../imgs/_individual_items.png";
@@ -8,6 +8,14 @@ import breakfast from "../imgs/_breakfast.png";
 import dessertDrinks from "../imgs/_Desserts.png";
 
 function Header() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
+
   const openMobileMenu = (e) => {
     e.preventDefault();
 
@@ -88,7 +96,10 @@ function Header() {
           </nav>
         </div>
 
-        <div className="header-inner" id="header-inner">
+        <div
+          className={scroll ? "header-inner is-fixed" : "header-inner"}
+          id="header-inner"
+        >
           <div className="inner-container">
             <a href="/" className="logo">
               <i className="logo-icon">Rosa Cafe</i>

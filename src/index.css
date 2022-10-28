@@ -42,7 +42,7 @@
   padding: 10px 0;
 }
 
-.header-inner.header-active {
+.header-inner.is-fixed {
   position: fixed;
   top: 0;
   z-index: 9999;
