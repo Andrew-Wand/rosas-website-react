@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/gallery.css";
+import "../css/main.css";
 
 function Gallery() {
   const [scroll, setScroll] = useState(false);
@@ -7,14 +8,20 @@ function Gallery() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 600);
-      setScroll(true);
+      // setScroll(true);
     });
   }, []);
 
   return (
     <div className="gallery-container">
       <div className="gallery-content">
-        <div className="gallery-items">
+        <div
+          className={
+            scroll
+              ? "gallery-items animated fadeIn"
+              : "gallery-items beforeAnim"
+          }
+        >
           <div className="gallery-item">
             <figure
               className="gallery-img"
