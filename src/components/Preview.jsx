@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/preview.css";
 import sliderImg from "../imgs/slide-image-4.jpg";
 import bannerImg from "../imgs/image-3.png";
 
 function Preview() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 2400);
+      setScroll(true);
+    });
+  }, []);
+
   return (
     <section className="preview-section">
       <div className="slider">
@@ -17,7 +26,13 @@ function Preview() {
                       <figure className="slider-img">
                         <img src={sliderImg} alt="img" />
                       </figure>
-                      <div className="slider-content">
+                      <div
+                        className={
+                          scroll
+                            ? "slider-content animated fadeIn"
+                            : "slider-content beforeAnim"
+                        }
+                      >
                         <div className="container">
                           <div className="slider-entry slider-entry-center">
                             <h1>ASK FOR BLACK BEANS</h1>

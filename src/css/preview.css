@@ -123,3 +123,26 @@ h1 {
     width: 90%;
   }
 }
+
+/* ANIMATION */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  */
