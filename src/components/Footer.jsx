@@ -3,6 +3,15 @@ import React from "react";
 import "../css/footer.css";
 
 function Footer() {
+  const toTop = (e) => {
+    e.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="container">
@@ -53,7 +62,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-aside text-right">
-            <a href="/" className="footer-btn">
+            <a href="/" className="footer-btn" onClick={toTop}>
               <i className="arrow-icon-large"></i>
               <span>BACK TO TOP</span>
             </a>
