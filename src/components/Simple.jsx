@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/simple.css";
 import giftCard from "../imgs/gift-card.png";
 
 function Simple() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 1000);
+      setScroll(true);
+    });
+  }, []);
+
   return (
     <section className="simple-container">
       <div className="container">
         <div className="inner-simple">
-          <div className="section-content">
+          <div
+            className={
+              scroll
+                ? "section-content animated fadeInLeft"
+                : "section-content beforeAnim"
+            }
+          >
             <h2 className="section-title">
               become a Rosa’s <span className="section-ribbon">vip</span>
             </h2>
@@ -20,7 +35,13 @@ function Simple() {
               sign up today
             </a>
           </div>
-          <div className="section-content">
+          <div
+            className={
+              scroll
+                ? "section-content animated fadeInRight"
+                : "section-content beforeAnim"
+            }
+          >
             <h2 className="section-title">purchase a gift card</h2>
             <figure className="simple-img">
               <img src={giftCard} alt="" />
