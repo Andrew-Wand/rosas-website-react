@@ -14,7 +14,7 @@ function Main() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 300);
+      setScroll(window.scrollY > 400);
       setScroll(true);
     });
   }, []);

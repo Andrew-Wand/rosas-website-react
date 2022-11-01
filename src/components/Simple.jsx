@@ -7,8 +7,8 @@ function Simple() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 1000);
-      setScroll(true);
+      setScroll(window.scrollY > 800);
+      // setScroll(true);
     });
   }, []);
 
