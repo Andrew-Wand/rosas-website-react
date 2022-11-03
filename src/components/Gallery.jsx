@@ -8,7 +8,7 @@ function Gallery() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 600);
-      // setScroll(true);
+      setScroll(true);
     });
   }, []);
 
